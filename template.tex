@@ -1,0 +1,121 @@
+\documentclass[11pt]{article} % Default font size is 12pt, it can be changed here
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+%\usepackage[export]{adjustbox}
+\linespread{2} % Line spacing
+\usepackage{amsmath} %equations
+\usepackage{notes2bib} %note to bibliography
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+\usepackage[color=red!10, disable]{todonotes}
+%\usepackage[disable]{todonotes} 
+\usepackage{todonotes}
+\graphicspath{{images/}} % Specifies the directory where pictures are stored
+\usepackage{rotating}
+%New page after everysection
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+%umlauts
+%\usepackage[ngerman]{babel}
+%\usepackage[utf8]{inputenc}
+
+
+%Set margins
+\usepackage{blindtext}
+\usepackage{tabularx}
+\usepackage{caption} %the bos doenst allow a float like figures, so this is 
+\usepackage[]{units} %units with fractions
+%%%
+%%Clickable links
+\usepackage{hyperref}
+%%CB
+%Test for ordering the citations
+%\usepackage{cite}
+
+\usepackage[sort,super,square]{natbib}
+%
+\begin{document}
+
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\center % Center everything on the page
+
+\textsc{\LARGE University of Bath}\\[1.5cm] % Name of your university/college
+\textsc{\Large PhD in Chemistry}\\[0.5cm] % Major heading such as course name
+\textsc{\large Project Report}\\[0.5cm] % Minor heading such as course title
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Progress on hybrid halide perovskites \emph{ab-initio} simulations}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Myname \textsc{Surname} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Prof. Name \textsc{Surname} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[4cm]
+
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+
+\vfill % Fill the rest of the page with whitespace
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section{Introduction} % Major section
+
+\begin{figure}[]
+\centering 
+\includegraphics[scale=0.32]{MAPI2.png}
+\caption{Threedimensional rendering of an alloy of \ce{MAPbI_{1.5}Br_{1.5}}. Green spheres represent lead, violet indium and red bromine.}
+\label{fig:3dd}
+\end{figure}
+
+\section{TiberCAD}
+gdfg
+
+\begin{figure}[]
+\centering 
+\includegraphics[scale=0.32]{VB.png}
+\includegraphics[scale=0.32]{CB_03.png}
+\caption{X}
+\label{fig:result}
+\end{figure}
+
+
+
+\begin{sidewaystable}[counterclockwise]
+\centering 
+\includegraphics[scale=0.5]{MAPI_E_band.png}
+\caption{Pasd}
+\label{fig:MAPI_E_band}
+\end{sidewaystable} 
+
+
+\end{document}
